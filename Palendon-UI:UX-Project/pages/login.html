@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+
+    <!--LINKS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap">
+    <link rel="stylesheet" href="../css/signup-login.css">
+    <script defer src="../scripts/login.js"></script>
+</head>
+
+<!--LOGIN FORM-->
+<body>
+    <div class="logo">
+        <h1 class="heading">Palendon</h1>
+        <img src="../images/logo.png" alt="The Palendon logo, a cartoon watermelon to signify Palestinian solidarity.">
+    </div>
+    <div class="slogan">
+        <p>Celebrating Palestine in London.</p>
+    </div>
+
+    <div class="content">
+        <form id="Lform" action="/">
+            <h1>Log In</h1>
+            <div class="info">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="info">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <button type="submit">Log In</button>
+            <p class="signin-redirect">Don't have an account? - <a href="signup.html">Sign Up</a></p>
+        </form>
+    </div>
+</body>
+
+</html>

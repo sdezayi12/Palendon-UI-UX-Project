@@ -1,0 +1,44 @@
+main {
+  font-family: "Radio Canada Big", sans-serif;
+  padding-top: 240px;
+  padding-left: 280px;
+  padding-right: 70px;
+  padding-bottom: 20px;
+}
+
+.greeting_wrapper h1 {
+  font-size: 35px;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.greeting_wrapper p1 {
+  font-size: 20px;
+  width: 100%;
+  justify-content: left;
+  color: rgb(111, 79, 160);
+}
+
+.greeting_wrapper p2{
+  font-size: 20px;
+  padding-top: 25px;
+  justify-content: left;
+  display: flex;
+  width: 100%;
+}
+
+.greeting_wrapper p3 {
+  font-size: 20px;
+  padding-top: 25px;
+  justify-content: left;
+  display: flex;
+  width: 100%;
+  color: rgb(111, 79, 160);
+}
+
+.greeting_wrapper img {
+  max-width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.391);
+}

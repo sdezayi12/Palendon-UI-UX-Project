@@ -1,0 +1,74 @@
+main {
+  font-family: "Radio Canada Big", sans-serif;
+  padding-top: 200px;
+  padding-left: 250px;
+  padding-bottom: 20px;
+  padding-right: 50px;
+  max-width: 100%;
+}
+
+.explain h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.boxes .event {
+  width: 25%;
+  margin: 10px;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 15px 15px 15px 15px rgba(78, 78, 78, 0.506);
+  height: auto;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.boxes .event h3 {
+  margin: 15px;
+  color: #541b89;
+}
+
+.boxes img {
+  vertical-align: text-bottom;
+  height: auto;
+  margin: 0;
+  max-width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.boxes .event p {
+  display: block;
+  font-size: calc(12px + 0.5vw);
+}
+
+.button {
+  padding: 10px;
+  margin-top: 20px;
+  width: 60%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(126, 79, 195);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px solid #250c3c;
+  border-radius: 4px
+}
+
+.button:hover {
+  background-color: #ad9cd5;
+  cursor: pointer;
+}

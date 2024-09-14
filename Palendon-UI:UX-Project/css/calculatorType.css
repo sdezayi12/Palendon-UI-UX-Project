@@ -1,0 +1,123 @@
+.calculator {
+	font-family: "Radio Canada Big", sans-serif;
+	padding-top: 180px;
+	padding-left: 120px;
+	padding-right: 50px;
+	max-width: 100%;
+}
+
+.explain h1 {
+	padding-left: 140px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.button {
+	padding: 10px;
+	margin-top: 10px;
+	width: 18%;
+	color: rgb(255, 255, 255);
+	background-color: rgb(126, 79, 195);
+	display: block;
+	margin-left: 140px;
+	margin-right: auto;
+	font-size: 15px;
+	cursor: pointer;
+	border: 2px solid #250c3c;
+	border-radius: 4px
+}
+
+.button:hover {
+	background-color: #ad9cd5;
+	cursor: pointer;
+}
+
+.calc {
+	padding: 30px 0;
+	margin-left: 70px;
+	font-size: 25px;
+}
+
+.calc-item {
+	background-color: rgb(255, 255, 255);
+	display: flex;
+    justify-content: space-between;
+	border-radius: 15px;
+	padding: 20px;
+	margin-bottom: 10px;
+	box-shadow: 15px 15px 15px 15px rgba(78, 78, 78, 0.506);
+}
+
+.calc-item h5{
+    padding: 0 10px;
+}
+
+.cost {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.calc-item .form-control {
+	background-color: #dbdbdb;
+	cursor: default;
+	height: 30px;
+	width: 40px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+.calc-item img {
+	align-items: left;
+	margin-left: 10px;
+	width: 120px;
+}
+
+.sbtn {
+	background-color: rgb(244, 85, 85);
+	height: 40px;
+	width: 40px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.sbtn:hover {
+	background-color: #c33636;
+	cursor: pointer;
+}
+
+.abtn {
+	background-color: rgb(76, 214, 73);
+	height: 40px;
+	width: 40px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.abtn:hover {
+	background-color: #37a32d;
+	cursor: pointer;
+}
+
+.travel {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.travel label {
+    margin-right: 60px;
+}
+
+input[type="radio"]:focus {
+    outline: 2px solid blue;
+}
+
+.totals {
+	text-align: right;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

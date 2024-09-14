@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Calculator</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
+   <link rel="stylesheet" href="../css/calculatorType.css">
+   <link rel="stylesheet" href="../css/common.css">
+   <script defer src="../scripts/calculatorType3.js"></script>
+   <script defer src="../scripts/common.js"></script>
+</head>
+
+<body>
+   <!--SIDEBAR-->
+   <div class="side">
+      <a href="index.html">
+         <i class="bi bi-house"></i>
+         <p>Home</p>
+      </a>
+      <a class="active" href="calculatorHome.html">
+         <i class="bi bi-calculator"></i>
+         <p>Calculator</p>
+      </a>
+      <a href="calendar.html">
+         <i class="bi bi-calendar-check"></i>
+         <p>Calendar</p>
+      </a>
+      <a href="notes.html">
+         <i class="bi bi-list-check"></i>
+         <p>Notes</p>
+      </a>
+   </div>
+
+   <!--HEADER-->
+   <header class="header">
+      <nav class="nav container">
+         <div class="nav_basic">
+            <div class="logo">
+               <p>Palendon</p>
+               <img src="../images/logo.png"
+                  alt="The Palendon logo, a cartoon watermelon to signify Palestinian solidarity.">
+            </div>
+            <div class="nav_toggle" id="nav-toggle">
+               <i class="ri-menu-line nav__burger"></i>
+               <i class="ri-close-line nav__close"></i>
+            </div>
+         </div>
+
+         <div class="nav_options" id="nav-options">
+            <ul class="nav_roll">
+               <!--ACCOUNT-->
+               <li class="nav_option">
+                  <div class="nav_first">
+                     My Account <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
+                  <ul class="dropdown">
+                     <li>
+                        <a href="#" class="nav_second">
+                           <i class="bi bi-pencil-square"></i> Edit
+                        </a>
+                     </li>
+                     <li>
+                        <a href="login.html" class="nav_second">
+                           <i class="bi bi-box-arrow-right"></i> Logout
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+
+               <!--CONTACT US-->
+               <li class="nav_option">
+                  <div class="nav_first">
+                     Contact Us <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
+                  <ul class="dropdown">
+                     <li>
+                        <a href="#" class="nav_second">
+                           <i class="bi bi-envelope"></i> Email
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="nav_second">
+                           <i class="bi bi-telephone"></i> Phone
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+
+               <!--NOTIFICATIONS-->
+               <li class="nav_option">
+                  <div class="nav_first">
+                     Notifications <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
+                  <ul class="dropdown">
+                     <li>
+                        <a href="#" class="nav_second">
+                           <i class="bi bi-exclamation-circle"></i> Cancelled!
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="nav_second">
+                           <i class="bi bi-currency-pound"></i> Sale!
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+
+   <!--CALCULATOR-->
+   <main>
+      <div class="calculator">
+         <div class="explain">
+            <h1>Choose your preferences for P21's Opening...</h1>
+            <a href="calculatorHome.html" class="button">Or calculate another event?</a>
+         </div>
+         <div class="calc">
+            <div class="calc main">
+               <div class="calc-item">
+                  <div class="name">
+                     <img src="../images/embroiderygallery.png" alt="Embroidery Gallery image.">
+                     <h5>Embroidery Exhibition Viewing Ticket - £15 </h5>
+                  </div>
+                  <div class="cost">
+                     <div class="func">
+                        <button id="item-sub" class="btn sbtn"><i class="bi bi-dash"></i></button>
+                        <input id="item-number" type="number" min="0" class="form-control text" value="0" readonly>
+                        <button id="item-add" class="btn abtn"><i class="bi bi-plus-lg"></i></button>
+                     </div>
+                     <h5>£ <span id="item-total">15</span> </h5>
+                  </div>
+               </div>
+   
+               <div class="calc-item">
+                  <div class="name">
+                     <img src="../images/embroideryworkshop.png" alt="Embroidery Workshop image.">
+                     <h5>Embroidery Workshop Ticket - £55 </h5>
+                  </div>
+                  <div class="cost">
+                     <div class="func">
+                        <button id="item2-sub" class="btn sbtn"><i class="bi bi-dash"></i></button>
+                        <input id="item2-number" type="number" min="0" class="form-control text" value="0" readonly>
+                        <button id="item2-add" class="btn abtn"><i class="bi bi-plus-lg"></i></button>
+                     </div>
+                     <h5>£ <span id="item2-total">55</span> </h5>
+                  </div>
+               </div>
+
+               <div class="calc-item">
+                  <div class="name">
+                     <h5>Travel</h5>
+                  </div>
+                  <div class="travel">
+                     <input type="radio" id="train" value="train" name="travel" />
+                     <label for="train">Train - £4</label>
+                     <input type="radio" id="bus" value="bus" name="travel" />
+                     <label for="bus">Bus - £2</label>
+                  </div>
+               </div>
+   
+               <div class="calc-item">
+                  <div class="breakdown">
+                     <h5>Event Total: </h5>
+                     <h5>Travel Total:</h5>
+                     <h5>Overall Total:</h5>
+                  </div>
+   
+                  <div class="totals">
+                     <h5>£<span id="event-total">0</span></h5>
+                     <h5>£<span id="travel-total">0</span></h5>
+                     <h5>£<span id="overall-total">0</span></h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+</body>
+   
+</html>

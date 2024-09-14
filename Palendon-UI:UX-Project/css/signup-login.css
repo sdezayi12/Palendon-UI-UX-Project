@@ -1,0 +1,98 @@
+body {
+    background: white;
+    font-family: "Radio Canada Big", sans-serif;
+    font-style: normal;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    max-width: 100%;
+    color: #000000;
+}
+
+.heading {
+    padding-left: 30px;
+    margin: 0;
+    font-size: 45px;
+    font-weight: bold;
+    display: inline;
+}
+
+.logo img {
+    vertical-align: text-bottom;
+    height: auto;
+    margin: 0;
+    max-width: 50px;
+}
+
+.slogan p {
+    margin: 0;
+    font-size: 15px;
+    padding-left: 120px;
+}
+
+#Sform h1, #Lform h1 {
+    text-align: center;
+}
+
+#Sform, #Lform {
+    width: 300px;
+    padding: 25px;
+    margin: 15vh auto 0 auto;
+    border-radius: 2px;
+    font-size: 15px;
+    background-color: rgba(223, 223, 223, 0.689);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.292);
+}
+
+#Sform button, #Lform button {
+    padding: 15px;
+    margin-top: 10px;
+    width: 70%;
+    color: white;
+    background-color: rgb(126, 79, 195);
+    border-radius: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+
+#Sform button:hover, #Lform button:hover {
+    background-color:  #a392ca;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info input {
+    display: block;
+    font-size: 14px;
+    border: 3px solid #a3a3a3d7;
+    border-radius: 3px;
+    padding: 10px;
+    width: 90%;
+}
+
+.info .error {
+    color: #ff3b3b;
+    font-size: 10px;
+    height: 13px;
+}
+
+.info.error input {
+    border-color: #ff3b3b;
+}
+
+.info.success input {
+    border-color: #2cc059;
+}
+
+.login-redirect, .signin-redirect {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 15px;
+}
